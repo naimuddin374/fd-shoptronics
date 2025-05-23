@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,8 +10,12 @@ body {
 }
 
 /* COMMON CLASSES START */
-.container {
+.containerHeader{
   width: 90%;
+  margin: 0 auto;
+}
+.container {
+  width: 1160px;
   margin: 0 auto;
 }
 .section-padding {
@@ -37,6 +42,8 @@ body {
 .heading {
   font-size: 24px;
   color: #000;
+  padding-top: 3px;
+  padding-bottom: 35px;
 }
 /* COMMON CLASSES END */
 
@@ -219,3 +226,329 @@ nav > ul > li:first-child {
   text-align: center;
 }
 /****************************Category Section End***********************************/
+
+
+
+/* Trending Products start */
+.trendProductPartItemPart{
+  display: flex;
+  gap: 3px;
+  margin-bottom: 100px;
+  background: #FEFEFE;
+}
+.trendProductPartItem h6{
+  color: rgba(24, 20, 20, 0.741);
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 25px;
+}
+.trendProductPartItem img{
+  padding-bottom: 10px;
+}
+.trendProductStar{
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+.trendProductStar i{
+  color: #FFB000;
+  font-size: 12px;
+}
+.trendProductStar p{
+  color: rgba(0, 0, 0, 0.709);
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+.trendProductPrice{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+.trendProductPrice del{
+  color: rgba(24, 20, 20, 0.342);
+  padding-left: 10px;
+}
+.HoverOne{
+  position: relative;
+}
+.HoverTwo{
+  position: relative;
+}
+.HoverThree{
+  position: relative;
+}
+.HoverFour{
+  position: relative;
+}
+.HoverFive{
+  position: relative;
+}
+.trendProductHoverPart{
+  position: absolute;
+  left: 15px;
+  bottom: 35%;
+}
+.trendProductHoverPart > a{
+  text-decoration: none;
+  padding: 9px 11px;
+  background: #3c1ff4;
+  color: #fff;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.trendProductHoverPart > i{
+  padding: 9px 7px;
+  background: #ffffff;
+}
+.trendProductHoverPart{
+  visibility: hidden;
+  opacity: 0;
+}
+.trendProductPartItem:hover .trendProductHoverPart{
+  visibility: visible;
+  opacity: 1;
+  transition: .6s;
+}
+/* Trending Products end */
+
+
+/* bannerHeadphonePart start */
+#bannerHeadphone{
+  /* width: 100%; */
+  margin-bottom: 111px;
+}
+.bannerHeadphonePartLeft p{
+  color: rgba(0, 0, 0, 0.914);
+  font-size: 12px;
+  font-weight: 200;
+}
+.bannerHeadphonePartLeft h2{
+  color: #000000;
+  width: 494px;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+.bannerHeadphonePartLeft a{
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px 32px;
+  background: #3c1ff4;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.bannerHeadphonePart{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #F9F3F0;
+  border-radius: 5px;
+  height: 478px;
+}
+/* bannerHeadphonePart end */
+
+
+/* bestSellingPrice start */
+.bestSellingPartItemPart{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 100px;
+  background: #FEFEFE;
+  height: 520px;
+}
+.bestSellingPartItem{
+  width: 33.33%;
+}
+.bestSellingPartItem h6{
+  color: #181414;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 25px;
+}
+.bestSellingPartItem img{
+  padding-bottom: 10px;
+  width: 100%;
+}
+.bestSellingPrice{
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+.bestSellingPrice i{
+  color: #FFB000;
+}
+.bestSellingPrice p{
+  color: rgba(0, 0, 0, 0.709);
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+.bestSellingPrice{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+.bestSellingPrice del{
+  color: rgba(24, 20, 20, 0.342);
+}
+
+
+
+.bestSellingHoverPart{
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+}
+.bestSellingHoverPart a{
+  padding: 9px 90px;
+  text-decoration: none;
+  color: #fff;
+  background: #3c1ff4;
+
+}
+.bestSellingHoverPart{
+  visibility: hidden;
+  opacity: 0;
+}
+.bestSellingPartItem:hover .bestSellingHoverPart{
+  visibility: visible;
+  opacity: 1;
+  transition: .6s;
+}
+
+
+/* bestSellingPrice end */
+
+
+/* logoPart start */
+#logo{
+  margin-bottom: 40px;
+}
+.logoPart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoPartItem{
+ padding: 47px 75px;
+  width: 25%;
+  border-top: 2px solid rgba(0, 0, 0, 0.606);
+  border-right: 2px solid rgba(0, 0, 0, 0.606);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.606);
+}
+/* logoPart end */
+
+
+/* footer  start */
+#footer{
+  background: url(../assets/img/footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 121px;
+}
+.footerPart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerPartItem h2{
+  color: #3577F0;
+  font-weight: 300;
+  font-size: 37px;
+  padding-bottom: 15px;
+}
+.footerPartItem p{
+  color: rgba(0, 0, 0, 0.617);
+  font-weight: 200;
+  font-size: 17px;
+  width: 290px;
+  line-height: 25px;
+}
+.footerPartItem h2 span{
+  color: #3577F0;
+  font-weight: bold;
+  font-size: 37px;
+}
+.footerPartItem h3{
+  color: #3577F0;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.footerPartItem h6{
+  color: rgba(0, 0, 0, 0.611);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
+.footerPartItem form{
+  margin-top: 17px;
+}
+.footerPartItem form input{
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  border: none;
+}
+.email {
+  padding-left: 14px;
+  font-size: 18px;
+}
+.button{
+  background: #3577F0;
+  color: #ffffff;
+  font-size: 18px;
+}
+.container > p{
+  color: #413333;
+  font-size: 18px;
+  padding-top: 84px;
+  padding-bottom: 100px;
+}
+/* footer  end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
+
+
+/* Trending Products start */
+/* Trending Products end */
